@@ -65,6 +65,10 @@ table {
     /* GLOBAL STYLES (mobile first/small) */
     body {
         font-family: var(--font);
+        background-color: var(--linen);
+    }
+    p {
+        font-size: 1rem;
     }
     header {
         background-color: var(--midnight-blue);
@@ -86,7 +90,7 @@ table {
     /*--------nav section------------------------------------------------*/
     nav {
         background-color: var(--champagne-gold);
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         padding: 10px;
     }
     nav ul {
@@ -104,7 +108,14 @@ table {
         text-decoration: none;
     }
     /*--------main section------------------------------------------------*/
-    
+    #welcome {
+        color: var(--midnight-blue);
+        border-bottom: solid var(--champagne-gold) 2px;
+        padding: 50px 20px 30px 20px;
+    }
+    #welcome h2 {
+        font-size: 1.5rem;
+    }
     /* MEDIA QUERY (medium) */
     /* MEDIA QUERY (large) */
     /* MEDIA QUERY (xl) */
