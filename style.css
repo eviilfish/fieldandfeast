@@ -63,6 +63,48 @@ table {
         --font: Playfair Display, sans-serif;
     }
     /* GLOBAL STYLES (mobile first/small) */
+    body {
+        font-family: var(--font);
+    }
+    header {
+        background-color: var(--midnight-blue);
+        text-align: center;
+        color: var(--soft-white);
+        padding: 20px;
+    }
+    h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    header p {
+        font-size: 1.1rem;
+        font-style: italic;
+        padding: 10px;
+    }
+    /*--------nav section------------------------------------------------*/
+    nav {
+        background-color: var(--champagne-gold);
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    nav li {
+        width: 100%;
+    }
+    nav a {
+        display: block;
+        font-weight: bold;
+        color: var(--midnight-blue);
+        text-decoration: none;
+    }
+    /*--------main section------------------------------------------------*/
+    
     /* MEDIA QUERY (medium) */
     /* MEDIA QUERY (large) */
     /* MEDIA QUERY (xl) */
