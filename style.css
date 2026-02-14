@@ -166,7 +166,7 @@ table {
     #galleryfnf {
         border-bottom: solid var(--champagne-gold) 2px;
         margin: 20px;
-        padding: 10px 0 5px 0;
+        padding: 10px 0 20px 0;
     }
     #galleryfnf h2 {
         color: var(--midnight-blue);
@@ -178,23 +178,51 @@ table {
         color: var(--dark-charcoal);
     }
     figure {
-        margin: auto;
-        padding: 20px 0;
+        margin: 10px 0;
+        padding: 10px 0 10px 0;
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: 1px 11px 15px -10px rgba(0,0,0,0.29);
     }
     figcaption {
+        padding-top: 10px;
         text-align: center;
         font-style: italic;
     }
-    .a1 img
+    .a1 img,
+    .b2 img,
+    .c3 img,
+    .d4 img,
+    .e5 img
     {
+        border-radius: 5px 5px 0 0;
+    }
+    #galleryfnf a {
+        display: block;
+        background-color: var(--olive-green);
+        color: var(--soft-white);
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
         border-radius: 5px 5px 5px 5px;
-        box-shadow: 1px 11px 15px -10px rgba(0,0,0,0.29);
+        margin: auto;
     }
     /*--------footer section----------------------------------------------------*/
     footer {
         background-color: var(--midnight-blue);
         text-align: center;
-        padding: 30px;
+        padding: 60px 0 30px 0;
+        line-height: 25px;
+    }
+    footer a {
+        text-decoration: none;
+        color: var(--champagne-gold);
+        font-size: 1rem;
+    }
+    footer address {
+        color: var(--soft-white);
+    }
+    footer p {
+        padding-top: 40px;
     }
     /* MEDIA QUERY (medium) */
     /* MEDIA QUERY (large) */
