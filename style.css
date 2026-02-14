@@ -225,5 +225,35 @@ table {
         padding-top: 40px;
     }
     /* MEDIA QUERY (medium) */
+    @media screen and (min-width: 600px) {
+        #ourofferings {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(3, auto);
+            column-gap: 15px;
+        }
+        #ourofferings h2 {
+            grid-column: span 2 / span 2;
+        }
+        .a {
+            line-height: 30px;
+            grid-row-start: 2;
+        }
+        .b {
+            line-height: 30px;
+            grid-row-start: 2;
+        }
+        .c {
+            margin: 0 0 20px 0;
+            line-height: 30px;
+            grid-column: span 2 / span 2;
+        }
+    }
     /* MEDIA QUERY (large) */
+    @media screen and (min-width: 900px) {
+        
+    }
     /* MEDIA QUERY (xl) */
+    @media screen and (min-width: 1200px) {
+
+    }
