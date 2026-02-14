@@ -174,17 +174,15 @@ table {
         font-weight: 500;
         padding-bottom: 10px;
     }
-    #galleryfnf p {
-        color: var(--dark-charcoal);
-    }
     figure {
         margin: 10px 0;
-        padding: 10px 0 10px 0;
+        padding: 5px 0 10px 0;
         border-radius: 5px 5px 5px 5px;
         box-shadow: 1px 11px 15px -10px rgba(0,0,0,0.29);
     }
     figcaption {
-        padding-top: 10px;
+        color: var(--dark-charcoal);
+        padding: 10px 20px 10px 20px;
         text-align: center;
         font-style: italic;
     }
@@ -196,6 +194,7 @@ table {
     {
         border-radius: 5px 5px 0 0;
     }
+    /*--------gallery button----------*/
     #galleryfnf a {
         display: block;
         background-color: var(--olive-green);
@@ -204,7 +203,7 @@ table {
         text-align: center;
         text-decoration: none;
         border-radius: 5px 5px 5px 5px;
-        margin: auto;
+        margin: 10px auto 2px;
     }
     /*--------footer section----------------------------------------------------*/
     footer {
@@ -226,6 +225,10 @@ table {
     }
     /* MEDIA QUERY (medium) */
     @media screen and (min-width: 600px) {
+        main {
+            max-width: 570px;
+            margin: auto;
+        }
         #ourofferings {
             display: grid;
             grid-template-columns: repeat(2, auto);
@@ -248,12 +251,35 @@ table {
             line-height: 30px;
             grid-column: span 2 / span 2;
         }
+        #imagegallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            column-gap: 20px;
+        }
     }
     /* MEDIA QUERY (large) */
     @media screen and (min-width: 900px) {
-        
+        main {
+            max-width: 850px;
+            margin: auto;
+        }
+        #imagegallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
     }
     /* MEDIA QUERY (xl) */
     @media screen and (min-width: 1200px) {
+        main {
+            max-width: 1150px;
+            margin: auto;
+        }
+        #imagegallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(1, 1fr);
 
+        }
     }
